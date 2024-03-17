@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UploadDownload" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2A4-hE-0oh">
+                                <rect key="frame" x="96.666666666666686" y="137" width="200" height="42"/>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="hyp-4X-Rfn"/>
+                                    <constraint firstAttribute="width" constant="200" id="iSa-dU-3UX"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Download Image">
+                                            <attributes>
+                                                <font key="NSFont" size="16" name="Arial-BoldMT"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onClickDownload:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T0Y-wh-dJQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUJ-sJ-1Q3">
+                                <rect key="frame" x="96.666666666666686" y="736" width="200" height="42"/>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="bfZ-Ze-Qxa"/>
+                                    <constraint firstAttribute="height" constant="42" id="i3r-su-crk"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Upload ">
+                                            <attributes>
+                                                <font key="NSFont" size="16" name="Arial-BoldMT"/>
+                                                <font key="NSOriginalFont" size="14" name="Arial-BoldMT"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="Image">
+                                            <attributes>
+                                                <font key="NSFont" size="16" name="Arial-BoldMT"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onClickUpload:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hNg-eN-OYD"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kAQ-b4-x4q">
+                                <rect key="frame" x="0.0" y="205" width="393" height="4"/>
+                            </progressView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d4P-je-9uJ">
+                                <rect key="frame" x="0.0" y="209" width="393" height="249.66666666666663"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bo6-1c-cIQ">
+                                <rect key="frame" x="96.666666666666686" y="75" width="200" height="42"/>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="HB2-NY-mcq"/>
+                                    <constraint firstAttribute="width" constant="200" id="Hcq-3m-MAY"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Get Request">
+                                            <attributes>
+                                                <font key="NSFont" size="16" name="Arial-BoldMT"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onClickGetRequest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i3m-NH-7Gi"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kJw-5E-c4o">
+                                <rect key="frame" x="0.0" y="466.66666666666669" width="393" height="249.33333333333331"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="d4P-je-9uJ" firstAttribute="top" secondItem="kAQ-b4-x4q" secondAttribute="bottom" id="1uR-X3-aD3"/>
+                            <constraint firstItem="kJw-5E-c4o" firstAttribute="height" secondItem="d4P-je-9uJ" secondAttribute="height" id="620-Cr-rg7"/>
+                            <constraint firstItem="Bo6-1c-cIQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="83A-aE-hZx"/>
+                            <constraint firstItem="kAQ-b4-x4q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8AZ-DY-5Ca"/>
+                            <constraint firstItem="d4P-je-9uJ" firstAttribute="top" secondItem="2A4-hE-0oh" secondAttribute="bottom" constant="30" id="CVQ-N2-abO"/>
+                            <constraint firstItem="IUJ-sJ-1Q3" firstAttribute="top" secondItem="d4P-je-9uJ" secondAttribute="bottom" constant="30" id="Dso-ye-XkK"/>
+                            <constraint firstItem="2A4-hE-0oh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JRv-NF-W02"/>
+                            <constraint firstItem="kJw-5E-c4o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="K12-fh-73e"/>
+                            <constraint firstItem="kJw-5E-c4o" firstAttribute="top" secondItem="d4P-je-9uJ" secondAttribute="bottom" constant="8" id="OOR-p2-Soc"/>
+                            <constraint firstItem="2A4-hE-0oh" firstAttribute="top" secondItem="Bo6-1c-cIQ" secondAttribute="bottom" constant="20" id="SMe-WT-EbB"/>
+                            <constraint firstItem="IUJ-sJ-1Q3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ubr-LE-awq"/>
+                            <constraint firstItem="kJw-5E-c4o" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="V0o-ym-GSW"/>
+                            <constraint firstItem="IUJ-sJ-1Q3" firstAttribute="top" secondItem="kJw-5E-c4o" secondAttribute="bottom" constant="20" id="brv-SR-arS"/>
+                            <constraint firstItem="kAQ-b4-x4q" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cRr-0U-eU8"/>
+                            <constraint firstItem="Bo6-1c-cIQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="ebK-5B-fdh"/>
+                            <constraint firstItem="d4P-je-9uJ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hr5-gb-XM9"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="IUJ-sJ-1Q3" secondAttribute="bottom" constant="40" id="iGs-dR-1GO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IUJ-sJ-1Q3" secondAttribute="bottom" constant="40" id="tXA-Qv-PpS"/>
+                            <constraint firstItem="d4P-je-9uJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uQE-eM-BZV"/>
+                            <constraint firstItem="2A4-hE-0oh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="vc0-pM-KNt"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="vc0-pM-KNt"/>
+                                <exclude reference="iGs-dR-1GO"/>
+                                <exclude reference="Dso-ye-XkK"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="downloadButton" destination="2A4-hE-0oh" id="UK1-Ee-8aC"/>
+                        <outlet property="getRequestButton" destination="Bo6-1c-cIQ" id="Q7D-26-4yC"/>
+                        <outlet property="imageView" destination="d4P-je-9uJ" id="RMJ-Tp-85p"/>
+                        <outlet property="progressView" destination="kAQ-b4-x4q" id="CLA-o0-AAO"/>
+                        <outlet property="textView" destination="kJw-5E-c4o" id="N4B-1A-DDr"/>
+                        <outlet property="uploadButton" destination="IUJ-sJ-1Q3" id="fvA-zT-u4C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="119.84732824427481" y="4.9295774647887329"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
